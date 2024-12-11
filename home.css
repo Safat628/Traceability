@@ -1,0 +1,348 @@
+header {
+  z-index: 10;
+  position: fixed;
+ 
+  height: 30px; /* Reduced height of the header */
+}
+
+.slider-container {
+  margin-top: 60px; /* Adjust this value based on your header height */
+  position: relative;
+  z-index: 1; /* Ensure it appears below the header */
+  width: 100%;
+  max-width: auto;
+  height: auto; /* Adjust height based on your design */
+}
+
+
+/* Slider styles */
+.slider {
+  display: flex;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%; /* Ensure each slide occupies full width */
+}
+
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images fit properly */
+ 
+}
+
+/* Navigation Buttons */
+.slider-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.slider-btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-btn:hover,
+.slider-btn.active {
+  background-color: #ff6700; /* Active button color */
+}
+
+
+/* Container for the boxes */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Space between the boxes */
+  margin: 20px 0;
+}
+
+/* Styling for individual boxes */
+.info-box {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Equal width for both boxes */
+  max-width: 40%; /* Restrict maximum width to fit well */
+  padding: 50px;
+  transition: transform 0.3s ease;
+  display: flex; /* Flex layout for image and text alignment */
+  gap: 15px; /* Space between image and text */
+}
+
+/* Add a hover effect */
+.info-box:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for images */
+.info-image {
+  width: 100px; /* Smaller image width */
+  height: 100px; /* Smaller image height */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image fits nicely */
+}
+
+/* Styling for text content */
+.info-text {
+  flex: 1; /* Take remaining space for text */
+}
+
+.info-text h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+/* info container end */
+
+/* General Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a2e;
+    
+  }
+
+/* Dark Mode for Traceability Text */
+body.dark-mode #traceability-content h1 {
+    color: white; /* Change Traceability text color to white */
+  }
+  
+  /* Dark Mode Dropdown Text for Traceability */
+  body.dark-mode .dropdown-content a {
+    color: white; /* Change dropdown options text color to white */
+  }
+  
+  /* Dark Mode Dropdown Background */
+  body.dark-mode .dropdown-content {
+    background-color: #1a1a2e; /* Dark background for dropdown */
+  }
+  
+  /* Dark Mode for Traceability Section */
+  body.dark-mode #traceability-content {
+    background-color: #1a1a2e;
+   
+    color: white; /* Ensure text is white inside Traceability section */
+  }
+  /* Dark Mode Text Color for "About SERA Bangladesh" */
+  body.dark-mode #about-us h1 {
+
+    font-size: 2.5rem;
+    color: #c2db22; /* Highlighted text color */
+    margin-bottom: 30px;
+    border-bottom: 3px solid #c2db22; /* Underline effect */
+    padding-bottom: 20px;
+  }
+  
+  /* Dark Mode for About Us Section */
+  body.dark-mode #about-us {
+    background-color: #1a1a2e;
+    color: #fff;
+  }
+  
+  
+  /* Optional: Text inside About Box to be white */
+  body.dark-mode #about-us .about-box p {
+    color: white; 
+  }
+
+  body.dark-mode .about-box {
+   
+    background: #1a1a2e;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(53, 50, 50, 0.2), inset -5px -5px 10px;
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    transition: all 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+  }
+  /* Dark Mode for Navbar */
+  body.dark-mode .navbar {
+    background-color: #000;
+  }
+  
+  /* Dark Mode Footer */
+  body.dark-mode footer {
+    background-color: #1a1a2e;
+    color: #fff;
+  }
+  
+  /* Apply Dark Mode to Specific Sections */
+  body.dark-mode .unique-shape {
+    background: #1a1a2e;
+    color: #fff;
+  }
+  
+  body.dark-mode .info-box {
+    background-color: #1a1a2e;
+    color: #fff;
+  }
+  
+  body.dark-mode .info-text h2,
+  body.dark-mode .info-text p {
+    color: #ddd;
+  }
+  
+  body.dark-mode .back-to-top {
+    background-color: #ff6700;
+    color: #fff;
+  }
+  
+  body.dark-mode .dropdown-content {
+    background-color: #1a1a2e;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+/* Image Slider styles */
+.img-slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin-top: 40px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-slider .slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.img-slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8);
+  transition: transform 2s ease-in-out;
+}
+
+/* Add zoom effect when the slide is active */
+.img-slider .slide.active img {
+  transform: scale(1.1);
+}
+
+/* Navigation Arrow Buttons */
+.img-slider .prev-btn, 
+.img-slider .next-btn {
+  position: absolute;
+  bottom: 20px; /* Positioned at the bottom of the image */
+  font-size: 30px;
+  color: #fff; /* White color for the arrows */
+  background-color: #ff6700; /* Match "back-to-top" button background */
+  padding: 15px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.img-slider .prev-btn {
+  left: 20px; /* Align to the left */
+}
+
+.img-slider .next-btn {
+  right: 20px; /* Align to the right */
+}
+
+/* Stylish hover effects */
+.img-slider .prev-btn:hover, 
+.img-slider .next-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Brighter hover background */
+  color: black; /* Change arrow color to black */
+  transform: scale(1.2); /* Slight zoom on hover */
+  opacity: 1;
+}
+
+/* Arrow content */
+.img-slider .prev-btn::before, 
+.img-slider .next-btn::before {
+  content: ''; /* Custom arrow shapes */
+  display: block;
+  width: 0; 
+  height: 0;
+  margin: auto;
+  border-style: solid;
+}
+
+.img-slider .prev-btn::before {
+  border-width: 10px 15px 10px 0; /* Custom left arrow shape */
+  border-color: transparent white transparent transparent;
+}
+
+.img-slider .next-btn::before {
+  border-width: 10px 0 10px 15px; /* Custom right arrow shape */
+  border-color: transparent transparent transparent white;
+}
+
+/* Image Parallax Effect */
+@keyframes parallax {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.img-slider .slide img {
+  animation: parallax 8s infinite alternate;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .img-slider {
+    height: 60vh;
+  }
+
+  .img-slider .prev-btn, 
+  .img-slider .next-btn {
+    bottom: 10px; /* Adjust bottom margin for smaller screens */
+    font-size: 24px;
+  }
+
+  .img-slider .slide img {
+    filter: brightness(0.9);
+  }
+}

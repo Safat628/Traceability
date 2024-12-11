@@ -1,0 +1,751 @@
+
+Header Links
+.nav-links li a {
+    font-size: 20px; /* Increase font size */
+    color: #fff; /* Maintain good contrast */
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-align: right;
+    
+}
+
+.nav-links li a:hover {
+    color: #c2db22; /* Highlight color on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Footer Links */
+.footer-links ul li a {
+    font-size: 18px; /* Increase font size in footer */
+    color: #fff; /* Maintain visibility */
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+
+
+}
+
+.footer-links ul li a:hover {
+    color: #c2db22; /* Highlight color */
+}
+
+.nav-links {
+    display: flex; /* Ensures the items are inline */
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -20px; /* Adjust the value to shift the links left */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Adds spacing between items */
+}
+
+.nav-links a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Adjust as per your design */
+    font-weight: bold;
+}
+
+
+/* Make the header fixed at the top */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header stays on top */
+    background-color: #000; /* Background color for header */
+    height: 40px; /* Adjust the height of the header */
+  
+}
+
+/* Add margin-top to sections following the fixed header */
+#contact-us {
+    margin-top: 150px; /* Same as the height of the fixed header */
+    padding: 60px 20px;
+    background-color: #171d2f; /* not needed i will delete later */
+    text-align: center;
+}
+
+/* Dropdown container */
+.nav-links .dropdown {
+    position: relative;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    background-color: #292d3e;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0; /* Initially transparent */
+    transform: translateY(-10px); /* Start with a small upward shift */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Show dropdown on hover with smooth transition */
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to its natural position */
+}
+
+
+
+/*
+
+*/
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a2e; /* Background for dark mode */
+    color: #fff; /* Text color in dark mode */
+}
+
+
+body.dark-mode footer {
+    background-color: #1a1a2e; /* Darker header and footer */
+}
+
+
+body.dark-mode .nav-links li a,
+body.dark-mode .footer-links ul li a {
+    color: #c2db22; /* Change link color for dark mode */
+}
+
+body.dark-mode .contact-form input, 
+body.dark-mode .contact-form textarea, 
+body.dark-mode .small-btn {
+    background-color: #171d2f; /* Adjust input backgrounds */
+    color: #fff; /* Text color in inputs */
+}
+
+body.dark-mode .small-btn {
+    background-color: #c2db22; /* Button color */
+}
+
+
+.dark-mode-icon-btn {
+    padding: 10px;
+    font-size: 20px;
+    color: #ffc107;
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-icon-btn.dark-mode {
+    color: #ffffff;
+    background-color: #ffc107;
+}
+
+.dark-mode-icon-btn:hover {
+    background-color: #c2db22;
+    color: #292d3e;
+}
+/* Dark Mode Styles */
+body.dark-mode #contact-us {
+    background-color: #1a1a2e; /* Dark background for contact-us in dark mode */
+    color: #fff; /* Change text color to white for dark mode */
+}
+
+
+
+
+/* Contact Section */
+#contact-us {
+    padding: 60px 50px;
+    background-color: #fcfafa; /* Dark background */
+    text-align: center;
+    margin-top: 0px;
+}
+
+#contact-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #c2db22; /* White heading */
+}
+
+#contact-us p {
+    font-size: 18px;
+    color: #ffffff; /* White paragraph text */
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left; 
+   
+}
+
+.contact-form label {
+    color: #ffffff; /* White label text */
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff; /* White background for fields */
+    color: #000000; /* Black text inside fields */
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #c2db22;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #005f73;
+
+}
+
+/* Locations */
+.locations {
+    margin-top: 60px;
+}
+
+.locations h2 {
+    font-size: 28px;
+    color: #ffffff; /* White text */
+}
+
+.location {
+    background-color: #292d3e; /* Darker card background */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.location h3 {
+    font-size: 24px;
+    color: #ffffff; /* White text */
+}
+
+.location p {
+    font-size: 16px;
+    color: #ffffff; /* White text */
+}
+
+.location a {
+    color: #ffffff; /* White links */
+    text-decoration: none;
+}
+
+.location a:hover {
+    text-decoration: underline;
+}
+
+.location-map-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.address-box, .map-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: fdf;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.address-box h2, .map-box h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #292d3e;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 80%;
+    border: none;
+    border-radius: 8px;
+}
+
+.small-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #c2db22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.small-btn:hover {
+    background-color: #005f73;
+}
+
+.contact-box {
+    background-color: #292d3e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; 
+    margin-top: 80px;
+}
+
+.contact-box h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.small-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #c2db22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.small-btn:hover {
+    background-color: #005f73;
+}
+
+.contact-box form {
+    margin-top: 20px;
+}
+
+ /* Footer */
+ footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Align left and right sections */
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+
+
+/* Locations Container */
+.location-map-container {
+    display: flex;
+    gap: 20px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Address Box Styling */
+.address-box {
+    flex: 1;
+    min-width: 350px;
+    background: linear-gradient(135deg, #292d3e, #1a1a2e); /* Gradient background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+.address-box h2 {
+    font-size: 24px;
+    color: #c2db22; /* Highlighted text color */
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 3px solid #c2db22; /* Underline effect */
+    padding-bottom: 10px;
+}
+
+.address-box h3 {
+    font-size: 20px;
+    color: #ffffff; /* White text for subheadings */
+    margin-bottom: 10px;
+}
+
+.address-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    line-height: 1.6; /* Improved readability */
+}
+
+.address-box a {
+    color: #c2db22; /* Highlighted link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.address-box a:hover {
+    text-decoration: underline;
+}
+
+/* Find Us Map Box */
+.map-box {
+    flex: 1;
+    min-width: 350px;
+    background: linear-gradient(135deg, #292d3e, #1a1a2e); /* Gradient background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.map-box h2 {
+    font-size: 24px;
+    color: #c2db22; /* Highlighted link color */
+    margin-bottom: 27px;
+    text-align: center;
+     border-bottom: 3px solid #c2db22; /* Underline effect */
+    padding-bottom: 19px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Subscribe Us Section */
+.subscribe {
+    text-align: right;
+    flex: 1; /* Aligns to the right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns text and icons to the right */
+    justify-content: center; /* Center the content vertically */
+    margin-right: 25px; /* Optional: Add some margin to the right */
+}
+
+/* Styling the title (Subscribe Us) */
+.subscribe h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 12px; /* Reduce space */
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    gap: 6px; /* Slightly reduce spacing between icons */
+    align-items: center; /* Ensure the icons are aligned with the text */
+    
+}
+
+/* Social Icon Styles */
+.social-icon {
+    width: 30px; /* Icon size */
+    height: 30px; /* Icon size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Circular icons */
+    background-color: #ffffff; /* Light background */
+    color: #1a1a2e; /* Dark text */
+    text-decoration: none;
+    font-size: 16px; /* Icon font size */
+    transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect for social icons */
+.social-icon:hover {
+    transform: scale(1.2) rotate(10deg); /* Slight enlargement and rotation */
+    background-color: #c2db22; /* Hover background color */
+    color: #ffffff; /* Hover text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Pulse animation on hover */
+.social-icon:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(194, 219, 34, 0.5); /* Pulse color */
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+
+/* Keyframes for the pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover {
+    color: #b6f620;
+}
+
+.social-media a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.social-media a:hover {
+    color: #b6f620;
+}
+
+
+/* Footer animation start *
+
+/* Footer Links */
+.footer-links ul li a {
+    font-size: 18px; /* Footer link size */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    margin-bottom: 5px;
+    position: relative; /* For pseudo-elements */
+    transition: transform 0.4s ease, color 0.4s ease, box-shadow 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    transform: scale(1.2) rotate(5deg); /* Slight enlargement and rotation */
+    color: #c2db22; /* Highlight color on hover */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow effect */
+}
+
+/* Add a pulse animation */
+.footer-links ul li a:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(194, 219, 34, 0.5); /* Pulse color */
+    border-radius: 5px; /* Slightly rounded for links */
+    top: -5%; /* Align the pulse effect */
+    left: -5%;
+    right: -5%;
+    bottom: -5%;
+    animation: pulse 1s infinite;
+}
+
+/* Keyframes for the pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Footer animation End*
+
+
+/* Header animation Start*
+
+/* Header Links */
+.nav-links li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+/* Hover effect for header links */
+.nav-links li a:hover {
+    color: #c2db22; /* Highlight color on hover */
+    letter-spacing: 2px; /* Increase spacing between letters */
+}
+
+/* Adding a glowing effect on hover for header links */
+
+
+/* Dropdown animation for Traceability */
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+    animation: dropdownFadeIn 0.3s ease-in-out; /* Fade in effect */
+}
+
+/* Keyframes for dropdown animation */
+@keyframes dropdownFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* "Let's Talk" Button Animation */
+.lets-talk {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.lets-talk:hover {
+    transform: scale(1.1);
+    background-color: #c2db22;
+    color: #292d3e; /* Text color changes on hover */
+}
+
+/* Apply animation to the dropdown content */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    background-color: #292d3e;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(5px); /* Slight upward movement */
+}
+
+/* Header animation end*
+
+
+/* Header bar animation start*
+
+/* Add a bar under each header link */
+.nav-links li {
+    position: relative; /* Make the container relative for positioning the bar */
+}
+
+/* Create the bar under each link */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Place the bar at the bottom of the link */
+    left: 0;
+    width: 0; /* Start with no width */
+    height: 3px; /* Height of the bar */
+    background-color: #c2db22; /* Color of the bar */
+    transition: width 0.3s ease; /* Smooth transition when expanding the bar */
+}
+
+/* Expand the bar when hovering over the link */
+.nav-links li a:hover::after {
+    width: 100%; /* Bar fills the width of the link */
+}
+
+/* Apply the dance-like effect to the bar */
+@keyframes barDance {
+    0% {
+        transform: scaleX(0.6);
+    }
+    50% {
+        transform: scaleX(1.2);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* Apply the animation when hovering */
+.nav-links li a:hover::after {
+    animation: barDance 0.6s ease-in-out; /* Bar dance effect */
+}
+
+
+/* Header bar animation End*
+
+

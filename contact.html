@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Talk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                 <img src="assets/newone-1.png" alt="Logo" class="logo-img"> 
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li class="dropdown">
+                    <a href="traceability.html" class="dropbtn">Traceability ▼</a>
+                    <div class="dropdown-content">
+                        <a href="agtrace.html" data-option="1">AgTrace</a>
+                        <a href="leathertrace.html" data-option="2">LeatherTrace</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Let's Talk</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-icon-btn">
+                <i class="fas fa-sun"></i>
+            </button>
+            
+       
+        
+    </header>
+
+    <section id="contact-us">
+      <div class="contact-box">
+          <h1>Get in Touch</h1>
+          <!-- Contact Form -->
+          <form id="contact-form" class="contact-form">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
+              
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+              
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+              
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required>
+              
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Your message" required></textarea>
+              
+              <button type="submit" class="small-btn">Send Message</button>
+          </form>
+      </div>
+  </section>
+
+        <!-- Location Information and Map Section -->
+        <div class="location-map-container">
+            <div class="address-box">
+                <h2>Our Working Locations</h2>
+                <div class="location">
+                    <h3>Our Office</h3>
+                    <p>House 23/A, Street 2, Suite 4/C, Old DOHS, Banani, Dhaka 1206, Bangladesh.</p>
+                    <p>Email: <a href="mailto:info@sera-bangladesh.com">info@sera-bangladesh.com</a></p>
+                    <p>Phone: <a href="tel:+8801315417566">+88 01315-417566</a></p>
+                </div>
+                <div class="location">
+                    <h3>Germany Office</h3>
+                    <p>Hoffeldstraße 6, 70597 Stuttgart, Germany.</p>
+                </div>
+            </div>
+            
+            <div class="map-box">
+                <h2>Find Us Here</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11123.33591337763!2d90.3993233!3d23.7924175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37541c02483bee65%3A0x81843530bca1224e!2sSERA%20Bangladesh!5e1!3m2!1sen!2sbd!4v1730887762441!5m2!1sen!2sbd" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <!-- Footer Links Section -->
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Let's Talk</a></li>
+                </ul>
+            </div>
+            
+    
+            <!-- Subscribe Us Section -->
+<div class="subscribe">
+  
+    <div class="social-icons">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a href="https://www.twitter.com" target="_blank" class="social-icon twitter" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon instagram" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+            
+        </a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+        <p>&copy; 2024 All rights reserved.</p>
+        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
