@@ -1,7 +1,3 @@
-# Traceability
-
-Traceability is a web-based platform designed to enhance transparency and accountability in supply chains. It consists of two main components: **AgTrace** and **LeatherTrace**, which provide traceability solutions for agriculture and leather industries respectively.
-
 ## Table of Contents
 
 - [About the Project](#about-the-project)
