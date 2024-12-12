@@ -64,4 +64,4 @@ To get a local copy of the project up and running, follow these steps:
    ```bash
    git clone https://github.com/yourusername/traceability.git
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Copyright @ Safat]
