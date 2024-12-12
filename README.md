@@ -68,3 +68,10 @@ To get a local copy of the project up and running, follow these steps:
 1. Clone the repository:  
    ```bash
    git clone https://github.com/yourusername/traceability.git
+
+
+Navigate to the project directory:
+bash
+Copy code
+cd traceability
+Open the index.html file in a browser to view the project.
