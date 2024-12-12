@@ -37,7 +37,7 @@ Traceability aims to ensure seamless tracking of goods from source to end-user. 
    - Smooth scrolling for better user experience.
 
 5. **Responsive Design**  
-   - Optimized for desktop, tablet, and mobile devices.
+   - Optimized for desktop, tablet, and mobile devices. (not yet responsive, working on it)
 
 ---
 
