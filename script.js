@@ -1,3 +1,4 @@
+
 // Dark Mode Toggle start
 
 // Back to Top Button Functionality start
@@ -87,30 +88,31 @@ document.addEventListener("DOMContentLoaded", function() {
 // slider end
 
 
-// Dark mode Start//
+// // Dark mode Start//
 
-document.addEventListener("DOMContentLoaded", function() {
-  const darkModeToggle = document.querySelector("#darkModeToggle"); // Update with your dark mode toggle element selector
-  const body = document.body;
 
-  // Check saved mode from localStorage
-  const darkMode = localStorage.getItem("darkMode");
+// document.addEventListener("DOMContentLoaded", function() {
+   const darkModeToggle = document.querySelector("#darkModeToggle"); // Update with your dark mode toggle element selector
+   const body = document.body;
+
+   // Check saved mode from localStorage
+   const darkMode = localStorage.getItem("darkMode");
 
   if (darkMode === "enabled") {
-      body.classList.add("dark-mode");
+       body.classList.add("dark-mode");
   }
 
   // Toggle dark mode
   darkModeToggle.addEventListener("click", () => {
-      if (body.classList.contains("dark-mode")) {
-          body.classList.remove("dark-mode");
+     if (body.classList.contains("dark-mode")) {        
+        body.classList.remove("dark-mode");         
           localStorage.setItem("darkMode", "disabled");
-      } else {
-          body.classList.add("dark-mode");
-          localStorage.setItem("darkMode", "enabled");
+    } else {
+           body.classList.add("dark-mode");
+         localStorage.setItem("darkMode", "enabled");
       }
-  });
-});
+   });
 
-// Dark mode End//
+
+
 
